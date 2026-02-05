@@ -9,14 +9,9 @@ const __dirname = path.dirname(__filename);
 export function serveStatic(app: Express) {
   const distPath = path.resolve(__dirname, "../client/dist");
 
-  if (!distPath) {
-    return;
-  }
-
   app.use(express.static(distPath));
 
-  // Express v5-safe SPA fallback
-  app.use((_req, res) => {
+  app.get("/*", (_req, res) => {
     res.sendFile(path.join(distPath, "index.html"));
   });
 }
