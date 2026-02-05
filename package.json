@@ -1,12 +1,12 @@
-{
+  {
   "name": "rest-express",
   "version": "1.0.0",
   "type": "module",
-  "license": "MIT",
+  "private": true,
   "scripts": {
-  "dev": "NODE_ENV=development tsx server/index.ts",
-  "build": "cd client && npm install && npm run build",
-  "start": "cd server && npm start"
+    "build": "cd client && npm install && npm run build",
+    "start": "cd server && npm start"
+  }
 },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
