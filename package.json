@@ -1,11 +1,10 @@
   {
-  "name": "rest-express",
-  "version": "1.0.0",
-  "type": "module",
+  "name": "kothahobe",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "cd client && npm install && npm run build",
-    "start": "cd server && npm start"
+    "start": "cd server && npm install && npm start"
   }
 },
   "dependencies": {
